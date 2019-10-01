@@ -1,8 +1,9 @@
 # Hash_generatorius
---
+
+---
 ## Link to the requirements of the task
 [Hash-generator](https://github.com/blockchain-group/Blockchain-technologijos/blob/master/pratybos/1uzduotis-Hashavimas.md)
-## Įdiegimo instrukcija
+## Install instructions
 1. Clone repository ```$ git clone https://github.com/gitguuddd/Hash_generatorius.git``` or ```$ git clone git@github.com:gitguuddd/Hash_generatorius.git``` if you're using SSH
 1. cd to ```Hash_Generatorius``` main directory
 2. Compile the program using CMakeLists.txt
