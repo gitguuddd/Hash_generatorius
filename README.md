@@ -80,6 +80,6 @@
  
 ---
 ## Program structure
--```HashFuncs.h and HashFuncs.cpp``` contain functions found in ```MindeHash``` class
--```MindeHash.h``` contains main body of MindeHash class
+- ```HashFuncs.h and HashFuncs.cpp``` contain functions found in ```MindeHash``` class
+- ```MindeHash.h``` contains main body of MindeHash class
 - ```DriveFuncs.h and DriveFuncs.cpp``` contain helper functions for the ```MindeHash``` class
