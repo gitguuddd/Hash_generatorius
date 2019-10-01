@@ -47,7 +47,7 @@
 ---
 ## Changelog
 
-[v0.1.1](https://github.com/gitguudddd/Hash_generatorius/releases/tag/v0.1.1) - (2019-10-01)
+[v0.1.1](https://github.com/gitguuddd/Hash_generatorius/releases/tag/v0.1.1) - (2019-10-01)
 
 **Added**
 - ```fixRange() and convertRange()``` functions for conversion of non-numeral and non-alphabetical characters
@@ -71,7 +71,7 @@
 - ```charCompare()``` function
 - Redundant getters and setters in ```MindeHash``` class
 ---
-[v0.1](https://github.com/gitguudddd/Hash_generatorius/releases/tag/v0.1) - (2019-09-25)
+[v0.1](https://github.com/gitguuddd/Hash_generatorius/releases/tag/v0.1) - (2019-09-25)
 
 **Added**
 - Initial functionality
