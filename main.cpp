@@ -2,16 +2,17 @@
 // Created by Mindaugas K on 9/13/2019.
 //
 #include "MindeHash.h"
+#include "DriveFuncs.h"
 #include <iostream>
 
 int main(int argc, char *argv[]) {
-    std::string input;
-    std::string check;
-    std::string sub;
-    std::string FILE="lol";
-    bool inputFailed=true;
-    int readcount = 0;
-    int choice = 0;
+    std::string input; //input string
+    std::string check; //variable which holds the first argument (input file name)
+    std::string change; // variable used to store input file name used in changeInput function
+    std::string FILE="placeholder"; // input file name
+    bool inputFailed=true; // successful input stream open flag
+    int readCount = 0; // count for how many simultaneous times the current input file was read
+    int choice = 0; // user menu choice
     if (argc >= 2) {
         check = argv[1];
         if (check.find(".txt") != std::string::npos) {
@@ -30,63 +31,40 @@ int main(int argc, char *argv[]) {
         std::cout << " input failo vardas nerastas\n";
     }
 
-    std::ifstream in;
-
     while (choice == 0) {
-        printf("Input string ilgis (be tarpu) - %d\n", input.size());
+        printf("Input string ilgis - %d\n", input.size());
         printf("Pasirinkite ka norite daryti \n");
-        printf("1. Nuskaityti teksta nuo input.txt failo \n");
+        printf("1. Nuskaityti teksta nuo input failo \n");
         printf("2. Sugeneruoti hash'a \n");
-        printf("3. Baigti darba \n");
+        printf("3. Pakeisti input failo pavadinima \n ");
+        printf("4. Baigti darba \n");
         std::cin >>
                  choice;
-        if (choice != 1 && choice != 2 && choice != 3) {
+        if (choice != 1 && choice != 2 && choice != 3 && choice != 4) {
             do {
                 std::cin.clear();
-
                 std::cin.ignore(256, '\n');
                 printf("Ivestas netinkamas pasirinkimas, bandykite is naujo\n");
                 std::cin >>
                          choice;
-            } while (choice != 1 && choice != 2 && choice != 3);
+            } while (choice != 1 && choice != 2 && choice != 3&& choice != 4);
         }
 
         switch (choice) {
 
             case 1:
-                if (readcount == 0) {
-                    try{
-                        in.open(FILE);
-                        inputFailed=false;
-                    }
-                    catch(...){
-                        std::cout<<"Nerastas/nenurodytas input failas\n";
-                        break;
-                    }
-                    if(!inputFailed){
-                    input = fileInput(in);
-                    choice = 0;
-                    readcount++;
-                    break;}
-                } else {
-                    std::cout << "Failas jau buvo perskaitytas \n";
+                    input = fileInput(FILE,inputFailed);
+                        if(inputFailed){
+                        input.clear();
+                        std::cout<<"Input failas nerastas/nepavyko jo atidaryti \n";
+                        }
                     choice = 0;
                     break;
-                }
+
             case 2:
-                if (input.
-
-                        empty()
-
-                        ) {
-                    printf("Ivesties string'as negali buti tuscias \n");
-                    choice = 0;
-                    break;
-                }
-                MindeHash::setString(input);
-
-                MindeHash::genHash();
-
+                MindeHash::genHash(input);
+                MindeHash::clearKey();
+                MindeHash::clearSumKey();
                 std::cout << "Sugeneruotas Hash: " <<
 
                           MindeHash::getHash()
@@ -95,6 +73,12 @@ int main(int argc, char *argv[]) {
                 choice = 0;
                 break;
             case 3:
+                std::cout <<"Iveskite naujo input failo pavadinima (su .txt galune): ";
+                std::cin>>change;
+                changeInput(FILE,change);
+                choice=0;
+                break;
+            case 4:
                 return 0;
             default:
                 break;
