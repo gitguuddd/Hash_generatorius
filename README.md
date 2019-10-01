@@ -14,7 +14,6 @@
 
 - If you plan to use input from an external file - add your file (name.txt) as the first command line argument after Hash_Gen.exe
 - If you wish to use both input from command line arguments and external file YOU MUST separate the first argument (filename) after Hash_Gen.exe from other following arguments by the use of whitespace
-- You can read the input file only once (for now)
 - After you start the program you will be greeted with a menu that looks like this:
 ```Pasirinkite ka norite daryti
    1. Nuskaityti teksta nuo input failo
