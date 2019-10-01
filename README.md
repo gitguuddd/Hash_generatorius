@@ -65,6 +65,7 @@
 - ```cutnCypher()``` has essentially become the cornerstone function of this hash after implementing both aforementioned keys as well as```fixRange() and convertRange()``` functions inside it
 - Functions that are only responsible for ease of use of the algorithm have been moved to ```DriveFuncs.h and DriveFuncs.cpp``` files
 - ```MindeHash``` class is now more self-reliable and can be used with minimal external code
+- README
 
 **Removed**
 
@@ -77,3 +78,8 @@
 - Initial functionality
 - README file
  
+---
+##Program structure
+-```HashFuncs.h and HashFuncs.cpp``` contain functions found in ```MindeHash``` class
+-```MindeHash.h``` contains main body of MindeHash class
+- ```DriveFuncs.h and DriveFuncs.cpp``` contain helper functions for the ```MindeHash``` class
