@@ -37,17 +37,22 @@ int main(int argc, char *argv[]) {
         printf("1. Nuskaityti teksta nuo input failo \n");
         printf("2. Sugeneruoti hash'a \n");
         printf("3. Pakeisti input failo pavadinima \n ");
-        printf("4. Baigti darba \n");
+        printf("4. Mazu failu testai\n");
+        printf("5. Konstitucijos testas\n");
+        printf("6. SHA-256 ir MindeHash lyginimas\n");
+        printf("7. MindeHash collision test \n");
+        printf("8. MindeHash bit test \n");
+        printf("9. Baigti darba \n");
         std::cin >>
                  choice;
-        if (choice != 1 && choice != 2 && choice != 3 && choice != 4) {
+        if (choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 5 && choice != 6 && choice != 7 && choice != 8 && choice != 9) {
             do {
                 std::cin.clear();
                 std::cin.ignore(256, '\n');
                 printf("Ivestas netinkamas pasirinkimas, bandykite is naujo\n");
                 std::cin >>
                          choice;
-            } while (choice != 1 && choice != 2 && choice != 3&& choice != 4);
+            } while (choice != 1 && choice != 2 && choice != 3&& choice != 4 && choice != 5 && choice != 6 && choice != 7 && choice != 8 && choice != 9);
         }
 
         switch (choice) {
@@ -79,6 +84,25 @@ int main(int argc, char *argv[]) {
                 choice=0;
                 break;
             case 4:
+                runSTests();
+                choice=0;
+                break;
+            case 5:
+                konstitucija();
+                choice=0;
+                break;
+            case 6:
+                SHACompare();
+                return 0;
+            case 7:
+                wordCompare();
+                choice=0;
+                break;
+            case 8:
+                bitTest();
+                choice=0;
+                break;
+            case 9:
                 return 0;
             default:
                 break;

@@ -6,8 +6,10 @@
 ## Install instructions
 1. Clone repository ```$ git clone https://github.com/gitguuddd/Hash_generatorius.git``` or ```$ git clone git@github.com:gitguuddd/Hash_generatorius.git``` if you're using SSH
 1. cd to ```Hash_Generatorius``` main directory
-2. Compile the program using CMakeLists.txt
-3. If you'll want to read from a text file add the text file to build folder
+2. Compile the program using CMakeLists.txt (cmake. , make)
+3. cd to ```build``` folder
+4. If you'll want to read from a text file add the text file to build folder
+5. Start the program by running a line in this format ```./Hash_Gen.exe <Input file name.txt> <rest of arguments>...```, follow terms of use
 4. Run the program (Hash_Gen.exe), follow the terms of use
 ---
 ## Terms of use
@@ -19,12 +21,22 @@
    1. Nuskaityti teksta nuo input failo
    2. Sugeneruoti hash'a
    3. Pakeisti input failo pavadinima
-   4. Baigti darba
+   4. Mazu failu testai
+   5. Konstitucijos testas
+   6. SHA-256 ir MindeHash lyginimas
+   7. MindeHash collision test
+   8. MindeHash bit test
+   9. Baigti darba
    ``` 
 - Choose the first option to read the input file or re-read a the current input file after modification
 - Choose the second option to generate hash from input
 - Choose the third option to change input file
-- Choose the fourth option to close the program
+- Choose the fourth option to run the first experimental test
+- Choose the fifth option to run the second experimental test
+- Choose the sixth option to run the advanced comparison of ```Mindehash``` and 
+- Choose the seventh option to run the third experimental test
+- Choose the eighth option to run the fourth experimental test
+- Choose the ninth option to end the program
 ---
 
 ## Pros of MindeHash
@@ -45,8 +57,26 @@
 
 
 ---
+## Experimental analysis and results of hash function comparison
+
+- Documentation of the experimental research-analysis of ```MindeHash``` can be found [here](ANALYSIS.md)
+- Results of ```MindeHash```'s battle in hash function comparison can be found [here](https://github.com/dqmis/hashrank)
+
+---
 ## Changelog
 
+[v0.1.2](https://github.com/gitguuddd/Hash_generatorius/releases/tag/v0.1.2) - (2019-10-03)
+
+**Added**
+
+- New drive functions used in the experimental-analysis of ```MindeHash```
+- Analysis.md file
+
+**Changed**
+- README
+
+
+---
 [v0.1.1](https://github.com/gitguuddd/Hash_generatorius/releases/tag/v0.1.1) - (2019-10-01)
 
 **Added**
@@ -82,3 +112,5 @@
 - ```HashFuncs.h and HashFuncs.cpp``` contain functions found in ```MindeHash``` class
 - ```MindeHash.h``` contains main body of MindeHash class
 - ```DriveFuncs.h and DriveFuncs.cpp``` contain helper functions for the ```MindeHash``` class
+- ```sha256.h and sha256.cpp``` contain an implementation of sha256 hash function in c++. This implementation is used in advanced comparison of ```MindeHash``` and sha256
+- ```Timer.h``` contains the timer class
