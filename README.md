@@ -10,7 +10,6 @@
 3. cd to ```build``` folder
 4. If you'll want to read from a text file add the text file to build folder
 5. Start the program by running a line in this format ```./Hash_Gen.exe <Input file name.txt> <rest of arguments>...```, follow terms of use
-4. Run the program (Hash_Gen.exe), follow the terms of use
 ---
 ## Terms of use
 
