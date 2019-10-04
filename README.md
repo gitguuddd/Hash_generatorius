@@ -6,7 +6,7 @@
 ## Install instructions
 1. Clone repository ```$ git clone https://github.com/gitguuddd/Hash_generatorius.git``` or ```$ git clone git@github.com:gitguuddd/Hash_generatorius.git``` if you're using SSH
 1. cd to ```Hash_Generatorius``` main directory
-2. Compile the program using CMakeLists.txt (cmake. , make)
+2. Compile the program using CMakeLists.txt (cmake . , make)
 3. cd to ```build``` folder
 4. If you'll want to read from a text file add the text file to build folder
 5. Start the program by running a line in this format ```./Hash_Gen.exe <Input file name.txt> <rest of arguments>...```, follow terms of use
