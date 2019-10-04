@@ -22,16 +22,16 @@ extern long long seed;
 extern std::mt19937 mt;
 extern std::uniform_int_distribution<S_LENGTH> dist;
 extern std::uniform_int_distribution<int> dist2;
-std::string random_string(S_LENGTH length);
-char random_char();
-std::string fileInput(const std::string &fName, bool &inputFailed);
-void changeInput(std::string &input, const std::string &change);
-void runTest(const std::string &loc, const std::string &name,  std::ofstream &fv);
-void runSTests();
-void konstitucija();
-void SHACompare();
-void wordCompare();
-std::string  stringToBin(const std::string & a);
-double bitCompare(const std::string & a, const std::string & b);
-void bitTest();
+std::string random_string(S_LENGTH length);// generates a random string with chars from ranChars charset
+char random_char();// generates a random char from ranChars charset
+std::string fileInput(const std::string &fName, bool &inputFailed);//reads the whole content of input file, checks if input file is valid
+void changeInput(std::string &input, const std::string &change);// Changes the input file
+void runTest(const std::string &loc, const std::string &name,  std::ofstream &fv);// performs a small file test
+void runSTests();//uses runTest to run small file tests
+void konstitucija();// separately hashes every line of konstitucija and prints out the average hashing time
+void SHACompare();// Compare MindeHash and SHA256, prints out results - VERY LONG TEST (-+5.5 hours)
+void wordCompare();// hashes two different inputs, compares the hashes, counts collisions
+std::string  stringToBin(const std::string & a);// converts string to a binary string
+double bitCompare(const std::string & a, const std::string & b);//uses stringToBin to convert two hashes to binary strings, compares the two binary strings, calculates difference ratio
+void bitTest();// performs the bitwise test, uses bitCompare
 #endif //HASH_GEN_DRIVEFUNCS_H

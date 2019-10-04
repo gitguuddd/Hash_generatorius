@@ -17,21 +17,21 @@ private:
 public:
     MindeHash() = delete;
 
-    friend void  cutnCypher(std::string &s,const std::string &pKey, const std::string &sKey);
+    friend void  cutnCypher(std::string &s,const std::string &pKey, const std::string &sKey);// cornerstone function of MindeHash, compreses the processed input into a hash
 
-    static void clearKey(){
+    static void clearKey(){// clears precursor key
         m_precursorKey.clear();
     }
-    static void clearSumKey(){
+    static void clearSumKey(){// clears sum key
         m_sumKey.clear();
     }
-    static bool isSumEmpty(){
+    static bool isSumEmpty(){// checks if sum key is empty
         return m_sumKey.empty();
     }
-    static void iToSumKey(int a){
+    static void iToSumKey(int a){// converts passed int value to sum key
         m_sumKey=std::to_string(a);
     }
-    static void genHash(const std::string &s) {
+    static void genHash(const std::string &s) {// runs all functions needed to generate a from input hash, runs the program recursively if it's necessary
 
         std::vector<int> vect;
             if(s.empty())

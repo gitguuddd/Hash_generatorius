@@ -26,9 +26,20 @@ The requirements for the analysis can be found [here](https://github.com/blockch
 - On average it took about 0.520789 s. for ```MindeHash``` to hash a line in ```konstitucija.txt```
 ---
 ## Results of advanced comparison between SHA-256 and MindeHash
-Coming soon :)
+![advanced-comp](Images/Advanced.png)
 
+| Hash function | 1-25000 input length hash avg.  | 25000-50000 input length hash time avg. | 50000-75000 input length hash time avg. | 75000-100000 input length hash time avg. | Total test time |
+|---------------|---------------------------------|-----------------------------------------|-----------------------------------------|------------------------------------------|-----------------|
+| SHA256        | 0.000148221                     | 0.000316194                             | 0.000442447                             | 0.000634983                              | 38.558          |
+| MindeHash     | 0.0704188                       | 0.158381                                | 0.22709                                 | 0.323188                                 | 19477           |
 - The comparison was done by comparing the hashing of 100000 strings with lengths of 1 to 100000 (length increased with each iteration)
+- By interpreting the results of the table we learn that:
+- ```MindeHash``` is around ```475``` times slower than ```SHA256``` when hashing inputs with length 1-25000
+- ```MindeHash``` is around ```500``` times slower than ```SHA256``` when hashing inputs with length 25000-50000
+- ```MindeHash``` is around ```513``` times slower than ```SHA256``` when hashing inputs with length 50000-75000
+- ```MindeHash``` is around ```509``` times slower than ```SHA256``` when hashing inputs with length 75000-100000
+- In total ```MindeHash``` is around ```505``` times slower than ```SHA256```
+- Conclusion - ```MindeHash``` is SLOW
 ---
 ## Results of task no. 3
 ![task3](Images/task3.png)
@@ -37,9 +48,9 @@ Coming soon :)
 ## Results of task no. 4
 ![task4](Images/task4.png)
 
-| Similarity         | value    |
+| difference         | value    |
 |--------------------|----------|
-| Maximum similarity | 98.8281% |
-| Average similarity | 63.2403% |
-| Minimum similarity | 52.5391% |
-- By interpreting the results we learn that ```MindeHash``` is not well suited for generating drastic changes in output with only minimal changes in input
+| Maximum difference | 47.4609% |
+| Average difference | 36.7578% |
+| Minimum difference | 0.78125% |
+- By interpreting the results we learn that ```MindeHash``` is not well suited for generating drastic changes in output with only minimal changes in input and does not really satisfy the 7-th requirement of a hash function

@@ -59,11 +59,21 @@
 ## Experimental analysis and results of hash function comparison
 
 - Documentation of the experimental research-analysis of ```MindeHash``` can be found [here](ANALYSIS.md)
-- Results of ```MindeHash```'s battle in hash function comparison can be found [here](https://github.com/dqmis/hashrank)
+- Results of ```MindeHash```'s battle in hash function comparisons can be found [here](https://github.com/dqmis/hashrank) and [here](https://github.com/AugustinasMK/TheHashRacer)
 
 ---
 ## Changelog
+[v0.1.3](https://github.com/gitguuddd/Hash_generatorius/releases/tag/v0.1.3) - (2019-10-04)
 
+**Added**
+- Comments defining what each function does
+- Advanced SHA256 - MindeHash comparison results in Analysis.md
+
+**Changed**
+- ```bitCompare```  function changed to calculate the ratios of difference instead of similarity
+- Changed the results of bitWise test in Analysis.md according to the change mentioned above
+
+---
 [v0.1.2](https://github.com/gitguuddd/Hash_generatorius/releases/tag/v0.1.2) - (2019-10-03)
 
 **Added**
