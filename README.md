@@ -27,7 +27,7 @@
    8. MindeHash bit test
    9. Baigti darba
    ``` 
-- Choose the first option to read the input file or re-read a the current input file after modification
+- Choose the first option to read the input file or re-read the current input file after modification
 - Choose the second option to generate hash from input
 - Choose the third option to change input file
 - Choose the fourth option to run the first experimental test
