@@ -32,7 +32,7 @@
 - Choose the third option to change input file
 - Choose the fourth option to run the first experimental test
 - Choose the fifth option to run the second experimental test
-- Choose the sixth option to run the advanced comparison of ```Mindehash``` and 
+- Choose the sixth option to run the advanced comparison of ```Mindehash``` and ```SHA256```
 - Choose the seventh option to run the third experimental test
 - Choose the eighth option to run the fourth experimental test
 - Choose the ninth option to end the program
