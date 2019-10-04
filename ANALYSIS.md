@@ -25,7 +25,7 @@ The requirements for the analysis can be found [here](https://github.com/blockch
 ## Results of task no. 2
 
 ![task2](Images/task2.png)
-- On average it took about 0.520789 s. for ```MindeHash``` to hash a line in ```konstitucija.txt```
+- On average it took about 0.315965 s. for ```MindeHash``` to hash a line in ```konstitucija.txt```
 ---
 ## Results of advanced comparison between SHA-256 and MindeHash
 ![advanced-comp](Images/Advanced.png)
