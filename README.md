@@ -51,7 +51,7 @@
 ---
 ## Cons of MindeHash
 
-- Due to usage of placeholder chars (if input length is smaller than 6 chars or if it doesnt divide by 5) there is a minuscule chance of collusion
+- Due to usage of placeholder chars (if input length is smaller than 5 chars or if it doesnt divide by 5) there is a minuscule chance of collusion
 - When working with large inputs that differ in only 1 symbol the similarity ratio may jump from 0.4 to 0.8 and higher
 
 
