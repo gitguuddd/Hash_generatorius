@@ -55,4 +55,4 @@ The requirements for the analysis can be found [here](https://github.com/blockch
 | Maximum difference | 47.4609% |
 | Average difference | 36.7578% |
 | Minimum difference | 0.78125% |
-- By interpreting the results we learn that ```MindeHash``` is not well suited for generating drastic changes in output with only minimal changes in input and does not really satisfy the 7-th requirement of a hash function
+- By interpreting the results we learn that ```MindeHash``` is not well suited for generating drastic changes in output with only minimal changes in input and does not really satisfy the 7th requirement of a hash function
