@@ -42,7 +42,7 @@ int main(int argc, char *argv[]) {
         printf("6. SHA-256 ir MindeHash lyginimas\n");
         printf("7. MindeHash collision test \n");
         printf("8. MindeHash bit test \n");
-        printf("9. Baigti darba \n");
+        printf("9 . Baigti darba \n");
         std::cin >>
                  choice;
         if (choice != 1 && choice != 2 && choice != 3 && choice != 4 && choice != 5 && choice != 6 && choice != 7 && choice != 8 && choice != 9) {

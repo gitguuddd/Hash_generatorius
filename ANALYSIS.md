@@ -8,6 +8,7 @@ The requirements for the analysis can be found [here](https://github.com/blockch
 - files ```small1 and small2``` each contained a character , both characters were different
 - files ```big1 and big2``` each contained a string made out of random characters with length of 10001 characters, both strings were different
 - files ```bigdiff1 and bigdiff2``` each contained a string made out of random characters with length of 10002 characters, both strings differed in only 1 character
+- file ```empty.txt``` contains nothing and is used to determine if the MindeHash will use the default value if no input is given
 
 | Input file name | Generated hash                                                   |
 |-----------------|------------------------------------------------------------------|
@@ -17,6 +18,7 @@ The requirements for the analysis can be found [here](https://github.com/blockch
 | big2.txt        | 64XWOUswVZoPO4WIijNiKLWnGIOZjxeg6f3UhP3WUPQRX40nhHYxW44LZexWweow |
 | bigdiff1.txt    | hPUUeuLyUNUnWuR0WoTewUpM4Eri7IOyrRFLlxmU1sw2y1FRw3GK14Q667wGeSqI |
 | bigdiff2.txt    | wUpM4Eri7IOyrRFLlxjPYuw3v4FRw3GK14Q667wGeSqIhPUUeuLyUNUnWt03UoTe |
+| empty.txt       | iLJGehNOUOeJgN5f3UGh7MeSj5goT3M6Wf5ieLiOJWJK4iUU7V5G5T4423TKUQWU |
 
 - By interpreting the results shown in the table we can clearly see that ```MindeHash```  satisfies the 1-3rd requirements of a Hash function
 ---

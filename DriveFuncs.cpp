@@ -64,6 +64,8 @@ void runSTests(){
     runTest(location,fName,fv);
     fName="bigdiff2.txt";
     runTest(location,fName,fv);
+    fName="empty.txt";
+    runTest(location,fName,fv);
 }
 void konstitucija(){
     std::string line;

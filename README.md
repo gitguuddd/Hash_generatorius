@@ -63,6 +63,10 @@
 
 ---
 ## Changelog
+[v0.1.4](https://github.com/gitguuddd/Hash_generatorius/releases/tag/v0.1.4) - (2019-10-04)
+**Added**
+- In [ANALYSIS.md](ANALYSIS.md): results of a test on an empty file
+---
 [v0.1.3](https://github.com/gitguuddd/Hash_generatorius/releases/tag/v0.1.3) - (2019-10-04)
 
 **Added**
